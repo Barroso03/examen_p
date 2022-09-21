@@ -1,0 +1,36 @@
+from clases.punto_rectangulo import *
+
+
+
+
+
+puntoA= Punto(2,3)
+puntoA.strg()
+puntoA.cuadrante()
+puntoB= Punto(5,5)
+puntoB.strg()
+puntoC= Punto(-3,-1)
+puntoC.strg()
+puntoC.cuadrante()
+puntoD= Punto(0,0)
+puntoD.strg()
+puntoD.cuadrante()
+print("el vector BA:")
+z =puntoB.vector(puntoA) 
+print(z)
+print("el vector AB:")
+h =puntoA.vector(puntoB) 
+print(h)
+print("La distancia entre A y B es:")
+d=puntoA.distancia(puntoB)
+print(d)
+print("La base entre A y B es:")
+R1 = Rectangulo()
+R1.set_pinicialx(2)
+R1.set_pfinalx(5)
+R1.set_pinicialy(3)
+R1.set_pfinaly(5)
+R1.base()
+print("La altura entre A y B es:")
+R1.altura()
+R1.area()
